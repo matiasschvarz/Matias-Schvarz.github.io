@@ -1,0 +1,48 @@
+.contendedor-invitados {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+.imagenes-invitados {
+    width: 100%;   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    margin: auto;
+    padding-bottom: 15px;
+}
+.imagenes {
+    width: 100%;
+}
+.titulo-invitados {
+    display: flex;
+    width: 100%;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 36px;
+    line-height: 42px;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: #060a24;
+}
+
+@media screen and (min-width: 769px) {
+.imagenes-invitados {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.imagenes {
+    display: flex;
+    max-width: 33.33%;
+    height: auto;
+}
+.titulo-invitados {
+    padding-left: 200px;
+    padding-bottom: 15px;  
+}
+}

@@ -1,0 +1,77 @@
+.contenedor-de-donde-venimos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.titulo-de-donde-venimos {
+    display: flex;
+    width: 100%;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 36px;
+    line-height: 42px;
+    color: #060A24;
+}
+.texto-de-donde-venimos {
+    display: inline-block;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin-bottom: 36px;
+    text-align: left;
+}
+.imagen-telefono {
+    display: flex;
+    min-width: 315px;
+    height: auto;
+    max-width: 60%;
+    transform: translateY(-120px);
+    margin-bottom: -80px;
+}
+.box-de-donde-venimos {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+@media screen and (min-width: 769px) {
+.imagen-telefono {
+    display: flex;
+    min-width: 315px;
+    height: auto;
+    max-width: 60%;
+    transform: translateY(-120px);
+    margin-bottom: -80px;
+}
+.contenedor-de-donde-venimos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.box-de-donde-venimos {
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-90px);
+}
+.titulo-de-donde-venimos {
+    margin-top: 10%;
+    padding-bottom: 26px;
+}
+.texto-de-donde-venimos {
+    display: inline-block;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin-bottom: 36px;
+    text-align: left;
+}
+}

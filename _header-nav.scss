@@ -1,0 +1,44 @@
+.nav-header {
+    display: inline-block;
+    position: absolute;
+    flex-direction: column;
+    background: #0000EC;
+    transition: all 1s ease-in-out;
+    height: 224px;
+    width: 1440px;
+    left: 100%;
+    top: 44px;
+    visibility: visible;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+}
+.item-nav {
+    display: flex;
+    height: 25%;
+    font-size: 16px;
+    align-items: center;
+    width: 100%;
+}
+.link-nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-family: 'IBM Plex Mono', monospace;
+    color:white;
+    padding-left: 16px;
+    text-decoration: none;
+}
+.checkbox-menu:checked ~ .nav-header {
+    left: 0%;
+    visibility: visible;
+}
+.nav-header, .link-nav:active {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+@media screen and (min-width: 769px) {
+.nav-header {
+    display: contents;
+}
+}

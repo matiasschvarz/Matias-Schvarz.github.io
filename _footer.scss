@@ -1,0 +1,44 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.texto-footer {
+    display: flex;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 10%;
+}
+.footer-redes-sociales {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 230px;
+    width: 100%;
+    padding-top: 10px;
+}
+.fa {
+    color: black;
+}
+
+@media screen and (min-width: 769px) {
+footer {
+    padding-right: 100px;
+    padding-left: 100px;
+    justify-content: space-between;
+}
+.texto-footer {
+    padding-bottom: 0px;
+}
+.footer-redes-sociales {
+    justify-content: inherit;
+}
+}

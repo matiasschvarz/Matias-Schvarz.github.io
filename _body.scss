@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.contenedor-general {
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    align-items: center;
+    border: none;
+    overflow: hidden;
+}

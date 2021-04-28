@@ -1,0 +1,17 @@
+@import './mixins';
+@import './variables';
+@import './header-nav';
+@import './header';
+@import './presentacion';
+@import './footer';
+@import './body';
+@import './nosotros';
+@import './episodios';
+@import './entrevistas';
+@import './topicos';
+@import './novedades';
+
+* {
+    @include format-document;
+}
+
