@@ -41,26 +41,29 @@
     color: #060a24;
     padding-left: 16px;
 }
-label>div {
+label {
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
 }
 .linea-arriba, .linea-medio, .linea-abajo {
     width: 18px;
     height: 2px;
     background-color: black;
-    margin: 3px;
+    margin: 2px;
     transition: all 1s;
+    cursor: pointer;
 }
-input:checked + label div :nth-child(1) {
+input:checked + label :nth-child(1) {
     background-color: blue;
-    transform:  translate(0px, 5px) rotate(-45deg);
+    transform:  translate(0px, 6px) rotate(-45deg);
 }
-input:checked + label div :nth-child(2) {
+input:checked + label :nth-child(2) {
     opacity: 0;
 }
-input:checked + label div :nth-child(3) {
+input:checked + label :nth-child(3) {
     background-color: blue;
-    transform: translate(0px, -5px) rotate(45deg);
+    transform: translate(0px, -6px) rotate(45deg);
 }
 .checkbox-menu {
     display: none;

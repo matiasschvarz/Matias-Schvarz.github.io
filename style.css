@@ -2,6 +2,10 @@
 /* Colores */
 /* Tamaño de Letras mobile */
 /* Tamaño de Letras Desktop */
+html {
+  scroll-behavior: smooth;
+}
+
 .nav-header {
   display: inline-block;
   position: absolute;
@@ -137,33 +141,41 @@
   padding-left: 16px;
 }
 
-label > div {
+label {
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .linea-arriba, .linea-medio, .linea-abajo {
   width: 18px;
   height: 2px;
   background-color: black;
-  margin: 3px;
+  margin: 2px;
   -webkit-transition: all 1s;
   transition: all 1s;
+  cursor: pointer;
 }
 
-input:checked + label div :nth-child(1) {
+input:checked + label :nth-child(1) {
   background-color: blue;
-  -webkit-transform: translate(0px, 5px) rotate(-45deg);
-          transform: translate(0px, 5px) rotate(-45deg);
+  -webkit-transform: translate(0px, 6px) rotate(-45deg);
+          transform: translate(0px, 6px) rotate(-45deg);
 }
 
-input:checked + label div :nth-child(2) {
+input:checked + label :nth-child(2) {
   opacity: 0;
 }
 
-input:checked + label div :nth-child(3) {
+input:checked + label :nth-child(3) {
   background-color: blue;
-  -webkit-transform: translate(0px, -5px) rotate(45deg);
-          transform: translate(0px, -5px) rotate(45deg);
+  -webkit-transform: translate(0px, -6px) rotate(45deg);
+          transform: translate(0px, -6px) rotate(45deg);
 }
 
 .checkbox-menu {
@@ -257,21 +269,13 @@ input:checked + label div :nth-child(3) {
   text-align: left;
 }
 
-.boton-titulo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 48px;
-  width: 100%;
-  background-color: #00F3BB;
-  border: none;
-  cursor: pointer;
-}
-
-.boton-titulo:hover {
+.boton-link:hover {
   background: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
   -webkit-transition: all 1s ease-in;
   transition: all 1s ease-in;
+  color: white;
+  -webkit-transition: 0s;
+  transition: 0s;
 }
 
 .boton-link {
@@ -279,7 +283,7 @@ input:checked + label div :nth-child(3) {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 100%;
+  height: 48px;
   font-family: 'IBM Plex Mono', monospace;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -288,18 +292,15 @@ input:checked + label div :nth-child(3) {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 16px;
-  font-weight: bold;
+  background-color: #00F3BB;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
   color: #060A24;
 }
 
-.boton-link:hover {
-  color: white;
-  -webkit-transition: 0s;
-  transition: 0s;
-}
-
 @media screen and (min-width: 769px) {
-  .boton-titulo {
+  .boton-link {
     font-size: 18px;
     width: 288px;
     height: 56px;
@@ -575,6 +576,7 @@ body {
   background: 0%;
   border-radius: 2%;
   max-width: 520px;
+  width: 100%;
   margin-bottom: 4%;
   margin-right: 1%;
   margin-left: 1%;
@@ -840,32 +842,38 @@ body {
   line-height: 42px;
 }
 
-.boton-novedades {
+.boton-link-novedades {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-family: 'IBM Plex Mono', monospace;
-  height: 48px;
+  height: 52px;
   width: 100%;
+  color: #060A24;
   background-color: #00F3BB;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
   border: none;
   cursor: pointer;
-  margin-bottom: 15%;
+  margin-bottom: 10%;
 }
 
-.boton-link:hover {
+.boton-link-novedades:hover {
   background: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
   -webkit-transition: all 1s ease-in;
   transition: all 1s ease-in;
-}
-
-.boton-link:active, .boton-link:link {
   color: white;
-  text-decoration: none;
+  -webkit-transition: 0s;
+  transition: 0s;
 }
 
 @media screen and (min-width: 769px) {
-  .boton-novedades {
+  .boton-link-novedades {
     font-size: 18px;
     width: 288px;
     height: 56px;

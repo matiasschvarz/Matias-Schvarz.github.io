@@ -12,3 +12,7 @@ $titulo-contenido-big: 48px;
 $texto-big: 16px;
 $texto-temas: 24px;
 $texto-button-big: 18px;
+
+html {
+    scroll-behavior: smooth;
+}

@@ -31,27 +31,29 @@
     font-size: 36px;
     line-height: 42px;
 }
-.boton-novedades {
+.boton-link-novedades {
     display: flex;
     font-family: 'IBM Plex Mono', monospace;
-    height: 48px;
+    height: 52px;
     width: 100%;
+    color: #060A24;
     background-color: #00F3BB;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
     border: none;
     cursor: pointer;
-    margin-bottom: 15%;
+    margin-bottom: 10%;
 }
-.boton-link:hover {
+.boton-link-novedades:hover {
     background: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
     transition: all 1s ease-in;
-} 
-.boton-link:active, .boton-link:link {
     color: white;
-    text-decoration: none;
-}
+    transition: 0s;
+} 
 
 @media screen and (min-width: 769px) {
-.boton-novedades {
+.boton-link-novedades {
     font-size: 18px;
     width: 288px;
     height: 56px;
