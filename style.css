@@ -349,7 +349,7 @@ footer {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 14px;
   text-align: center;
-  padding-bottom: 10%;
+  padding-bottom: 15px;
 }
 
 .footer-redes-sociales {
@@ -378,6 +378,7 @@ footer {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    width: 100%;
   }
   .texto-footer {
     padding-bottom: 0px;
@@ -860,7 +861,7 @@ body {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
 .boton-link-novedades:hover {
